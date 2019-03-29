@@ -1,4 +1,4 @@
-ok
+--- Dump ---
 
 I have a lot of data
 
@@ -38,9 +38,7 @@ two seprate condtions [truth, lie]
 
 histograms would be good because the values are discrete 
 
------
-
-Plan 
+----- Plan -----
 
 for each model
 	for each set
@@ -64,8 +62,88 @@ contrast human vs AI
 		for each quadrant
 			compare human average vs AI average by the human
 
+what woudl be some cool graphs
+	I guess I could do histograms
+	But does that stuff matter in terms of a sequence? 
+	linear model 
+	is there anything else?
+
+what do I need the matrix to look like for R to work? 
+
+
 
 ---- consensus --- 
+
+Matrix
+	playerID
+	opponent
+	condition
+
+	[	 	
+		score_human_A
+		score_AI_A
+		score_human_B
+		score_AI_B
+		score_human_C
+		score_AI_C
+
+	] --- probably don't even need this
+
+	human_attack_freq_A
+	AI_attack_freq_A
+	human_attack_freq_B
+	AI_attack_freq_B
+	human_attack_freq_C
+	AI_attack_freq_C
+
+	human_attack_cum
+	AI_attack_cum
+	human_attack_average
+	AI_attack_average
+
+	human_peace_freq_A
+	AI_peace_freq_A
+	human_peace_freq_B
+	AI_peace_freq_B
+	human_peace_freq_C
+	AI_peace_freq_C
+
+	human_peace_cum
+	AI_peace_cum
+	human_peace_average
+	AI_peace_average
+
+	quadrant_1_A
+	quadrant_2_A
+	quadrant_3_A
+	quadrant_4_A
+
+	quadrant_1_B
+	quadrant_2_B
+	quadrant_3_B
+	quadrant_4_B
+
+	quadrant_1_C
+	quadrant_2_C
+	quadrant_3_C
+	quadrant_4_C 
+
+	quadrant_1_cum
+	quadrant_2_cum
+	quadrant_3_cum
+	quadrant_4_cum
+
+graphs
+	Histograms
+		CI of average attack per turn
+		CI of cumulative attack 
+		CI of average peace per turn
+		CI of cumulative peace
+		CI of each quadrant cumulative
+		CI of each quadrant per turn
+	Linear
+		Average attack per turn 
+		avereage peace per turn 
 
 for [cumulative, by-turn]
 
@@ -81,14 +159,15 @@ for [cumulative, by-turn]
 	for [attack, peace]
 			compare human-v-human and human-v-AI
 
-logistical models
-	
+	[
+		logistical models
+			
+			attack vs peace first turn --> attack-peace ratio overall (positive, negative)
 
-	attack vs peace first turn --> attack-peace ratio overall (positive, negative)
+			attack + peace ratio first game --> attack-peace ratio overall 
 
-	attack + peace ratio first game --> attack-peace ratio overall 
+			for each quadrant
 
-	for each quadrant
-
-		all quadrants first game --> quadrant ratio overall 
-
+				all quadrants first game --> quadrant ratio overall 
+				
+	] --- maybe ignore this for now
