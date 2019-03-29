@@ -1,0 +1,94 @@
+ok
+
+I have a lot of data
+
+I have data from 1 game 
+
+hawk-dove is about aggression 
+
+there is an incentive to be a victim, so aggression is more indicative of a zero-sum mentality 
+
+should I calculate the average score?
+
+I have the total for every round
+
+Should I try to identify sequences of cooperation
+	What kind fo statstic test would prove they are significant? 
+
+I can probalby easily track the 4 quadrants to show at a more granular level what's happening 
+	At a high level, I should track how cooperative they are 
+
+main comparision is human-vs-AI expectation 
+
+plot the distribution of values overall for each game 
+	yes, so 3 separate distributions
+
+compare each model and see if it's significant 
+
+it's not a logistic regression
+
+how would I go about proving that they are either more cooperative or more hostile? 
+	compare the means of the two? 
+
+try to see if cooperation increases over time? 
+	also say that it might not be significant 
+
+two seprate condtions [truth, lie]
+	think about truth first 
+
+histograms would be good because the values are discrete 
+
+-----
+
+Plan 
+
+for each model
+	for each set
+		plot histogram of values 
+
+
+compare the mean of attack among models
+
+compare the mean of peace among models
+
+for each quadrant
+	compare mean of quadrant among models 
+
+for [cooperation, defection]:
+	for each turn 
+		plot linegraph of mean 
+		CI 
+
+contrast human vs AI
+	for each turn 
+		for each quadrant
+			compare human average vs AI average by the human
+
+
+---- consensus --- 
+
+for [cumulative, by-turn]
+
+	for each quadrant
+		contrast each model condition
+
+	for [attack, peace]
+		constrast the average of the models
+
+	for [attack, peace]
+		constrast the average of the humans with each model
+
+	for [attack, peace]
+			compare human-v-human and human-v-AI
+
+logistical models
+	
+
+	attack vs peace first turn --> attack-peace ratio overall (positive, negative)
+
+	attack + peace ratio first game --> attack-peace ratio overall 
+
+	for each quadrant
+
+		all quadrants first game --> quadrant ratio overall 
+
