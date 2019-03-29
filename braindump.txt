@@ -145,7 +145,7 @@ graphs
 		Average attack per turn 
 		avereage peace per turn 
 
-for [cumulative, by-turn]
+for [cumulative, by-turn, average]
 
 	for each quadrant
 		contrast each model condition
