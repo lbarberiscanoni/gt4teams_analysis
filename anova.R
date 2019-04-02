@@ -67,7 +67,7 @@ ppo_v_vpg_and_dqn <- c(-2/3, 1/3, 1/3)
 vpg_v_dqn <- c(0, -1/2, 1/2)
 contrasts(aiOnlyData$opponent) <- cbind(ppo_v_vpg_and_dqn, vpg_v_dqn)
 
-model1 <- aov(varY ~ varX, data = data)
+model1 <- aov(human_attack_average ~ opponent, data = aiOnlyData)
 
 summary(model1)
 
