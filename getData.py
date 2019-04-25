@@ -158,7 +158,7 @@ def bos():
 
 
 				players = ["human", "AI"]
-				strategies = ["selfish", "altruistic"]
+				strategies = ["selfish", "altruistic", "overall"]
 				events = ["coordination", "non_coordination"]
 				turns = ["A", "B", "C"]
 
