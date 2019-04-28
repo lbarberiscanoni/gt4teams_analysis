@@ -364,4 +364,4 @@ def separate():
 		pickle.dump(hawkdove, hawkdove_f)
 		print("success")
 
-pd()
+hawkdove()
