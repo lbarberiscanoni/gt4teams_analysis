@@ -1,4 +1,6 @@
 library(lme4)
+library(plyr)
+library(MASS)
 
 pd$cd <- pd$cooperation == 1
 pd$ncd <- pd$cooperation == 4
@@ -48,3 +50,7 @@ summary(model3)
 
 model4 <- glmer(formula = ncd ~ condition + turn + (1 | humanID), data = hd, family="binomial")
 summary(model4)
+
+#------------------------------------------------#
+
+
