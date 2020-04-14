@@ -1,4 +1,4 @@
-humanID,opponent,turn,condition,cooperation
+particiapantID,ai-type,turn,team-expectation,coordination (dependent variable)
 lrxzfkdz,ppo,0,human,1
 lrxzfkdz,ppo,1,human,2
 lrxzfkdz,ppo,2,human,2

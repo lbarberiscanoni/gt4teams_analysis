@@ -1,4 +1,4 @@
-humanID,opponent,turn,condition,cooperation
+participantID,ai-type,turn,team-expectation,cooperation (dependent variable)
 vdtwbpdf,ppo,0,human,4
 vdtwbpdf,ppo,1,human,1
 vdtwbpdf,ppo,2,human,2
